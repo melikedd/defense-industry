@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+ 
+.navbar {
+    background-color: #224869e0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar a {
+    float: left; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #255e8f;
+    color: rgb(238, 230, 230);
+}
+
+#home {
+    background-color: #cddaf0; 
+    background-image: url('img/sky.jpg');
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%; 
+}
+ 
+#home h1 {
+    color: #224869;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Vurucu görünüm için gölge ekler */
+    overflow: hidden; /* Taşmaları gizle */
+    white-space: nowrap; /* Satır kaydırmayı engelle */
+    display: inline-block; /* Animasyon için gerekli */
+    font-size: 60px; /* Daha büyük yazı tipi */
+    letter-spacing: 10px; /* Harfler arasındaki boşluk */
+    font-weight: 900;
+    animation: typing 4s steps(10) infinite, blink 1s step-end infinite; /* Animasyon */
+    border-right: 4px solid; /* Yanıp sönen imleç efekti */ 
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #e6edf379; }
+}
+
+#home h3 {  
+    color: #224869; 
+}
+ 
+#text {  
+    position: absolute;
+} 
+
+#image img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    max-width: none; /* Reset max-width */
+    position: relative; 
+    opacity: 0.9;
+}
+
+#about {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+  
+  .image-container img {
+    margin-right: 20px; /* Metin ile resim arasındaki boşluğu ayarlar */
+  } 
+  .image-container p {
+    margin-top: 0; /* Paragrafın üstündeki boşluğu kaldırır */
+  }
+ 
+.row {
+    padding: 4em;
+    border-radius: 30px;
+    background-color: #90c3ff45;
+    display: flex;   
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.center-content {
+    text-align: center; /* Metni yatay olarak ortala */
+    margin: 0 auto; /* Div'i dikey olarak da ortala */
+    align-content: center; 
+  }
+  
+ 
+footer.footer {
+    background-color: #224869;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+}
