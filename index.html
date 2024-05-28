@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Türk Savunma Sanayisinin Enleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <img src="img/favicon.ico" alt="Logo" style="float: left; margin: 5px 10px;" />
-      <a href="#home"><i class="fa-solid fa-house"></i>Ana Sayfa</a>
-      <a href="#about"><i class="fa-solid fa-address-card"></i>Hakkımızda</a>
-      <a href="#contact"><i class="fa-solid fa-message"></i></i>İletişim</a>
+      <a href="#home">
+        <i class="fa-solid fa-house"></i>
+        <span>Ana Sayfa</span>
+      </a>
+      <a href="#about">
+        <i class="fa-solid fa-address-card"></i>
+        <span>Hakkımızda</span>
+      </a>
+      <a href="#contact">
+        <i class="fa-solid fa-message"></i>
+        <span>İletişim</span>
+      </a>
     </nav>
 
     <!-- Ana İçerik -->
@@ -27,7 +37,7 @@
 
     <div id="about">
       <div class="row">
-        <div class="" style="min-width: 50%">
+        <div class="image-container">
           <img src="img/bayraktar.jpg" alt="bayraktar" />
         </div>
         <div class="center-content">
@@ -43,12 +53,15 @@
             istihbarat toplama, havadan karaya taarruz ve hava muharebesi gibi
             görevleri başarıyla yerine getirebilmektedir.
           </p>
-          
+          <ul style="text-align: left;">
+            <li>Uçuş Süresi: 24 saat.</li>
+            <li> Faydalı Yük Taşıma Kapasitesi: 1.350 Kg.</li>
+          </ul>
         </div>
       </div>
 
       <div class="row">
-        <div class="" style="min-width: 50%">
+        <div class="image-container">
           <img src="img/anka-3.png" alt="anka" />
         </div>
         <div class="center-content">
@@ -67,7 +80,7 @@
       </div>
 
       <div class="row">
-        <div class="" style="min-width: 50%">
+        <div class="image-container">
           <img src="img/hurjet.jpg" alt="hurjet" />
         </div>
         <div class="center-content">
@@ -93,7 +106,7 @@
       </div>
 
       <div class="row">
-        <div class="" style="min-width: 50%">
+        <div class="image-container">
           <img src="img/TCG-ANADOLU.jpg" alt="TCG-ANADOLU" />
         </div>
         <div class="center-content">
@@ -122,6 +135,7 @@
     <footer class="footer">  <!-- İletişim Formu -->
         <div id="contact" class="section">
           <h2>İletişim</h2>
+          <hr>
           <div id="contact-card" class="card">
             <p style="font-size: larger;">Daha fazlası için <a href="mailto:melikedernek02@gmail.com" target="_parent">bize ulaşın!</a></p>
             <p style="font-size: larger;">Melike Azra Dernek</p>
